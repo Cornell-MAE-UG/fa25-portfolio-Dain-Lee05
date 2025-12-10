@@ -3,7 +3,7 @@ layout: project
 title: Torque Wrench Design Analysis
 description: Final Project for MAE 3270: Mechanics of Enigneering Materials 
 technologies: [Audtodesk Fusion]
-image: /assets/images/pfp_torque wrench.jpg
+image: /assets/images/sunset.jpeg
 ---
 
 
