@@ -1,6 +1,6 @@
 ---
 layout: default
-title: <Your Name> - Curriculum Vitae
+title: <Dain Lee> - CV
 permalink: /cv/
 ---
 ## Curriculum Vitae
@@ -8,12 +8,13 @@ permalink: /cv/
 [Download my CV]({{ "/assets/CV.pdf" | relative_url }}) in PDF format.
 
 
-**Email:** [netID@cornell.edu](mailto:netID@cornell.edu) | | | **Phone:** +123 456 7890
+**Email:** [Ld499@cornell.edu](mailto:ld499@cornell.edu) | | | **Phone:** +408 819 8380
+
 
 ---
 
 #### Objective
-Aspiring engineering student with a strong foundation in.... Passionate about ... and eager to apply my knowledge in real-world applications.
+Passionate mechanical engineering student exploring the worlds of physics.
 
 ---
 
