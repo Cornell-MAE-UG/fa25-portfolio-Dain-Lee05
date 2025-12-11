@@ -26,8 +26,8 @@ Topic of Interest: Human Heart
 Abstract: In this project, we will be studying the human heart as a system. Specifically, we will be looking into devices that aid in its function in the case of disease and their respective effects on the cardiovascular system to satisfy performance metrics. In terms of system dynamics, we will be analyzing the heart through a block diagram, state space model, and closed loop control system. We are interested in connecting system dynamics to biology, since we have not done that in the scope of the course. 
 
 The Heart System
-The heart and circulatory system is modeled as a closed loop system with a purpose of delivering oxygenated blood to muscles throughout the body. More specifically, the system starts with veins bringing deoxygenated blood towards the heart. Eventually the blood enters the heart through the right atrium and flows into the right ventricle. From there, the blood travels to the lungs to dispose of waste products, notably carbon dioxide, and pick up oxygen. The newly oxygenated blood enters the left atrium followed by the left ventricle. From there, the blood circulates to the rest of the body via arteries [1]. 
-It can be convenient to compare the heart as a system via a block diagram of sorts. They can be thought of as inputs, deoxygenated blood, and outputs, oxygenated blood, with the heart transferring the blood in between. 
+<br>The heart and circulatory system is modeled as a closed loop system with a purpose of delivering oxygenated blood to muscles throughout the body. More specifically, the system starts with veins bringing deoxygenated blood towards the heart. Eventually the blood enters the heart through the right atrium and flows into the right ventricle. From there, the blood travels to the lungs to dispose of waste products, notably carbon dioxide, and pick up oxygen. The newly oxygenated blood enters the left atrium followed by the left ventricle. From there, the blood circulates to the rest of the body via arteries [1]. 
+<br>It can be convenient to compare the heart as a system via a block diagram of sorts. They can be thought of as inputs, deoxygenated blood, and outputs, oxygenated blood, with the heart transferring the blood in between. 
 
 ![Shaded rendering of earlier version]({{ "/assets/images/fig1.png" | relative_url }}){: .inline-image-c style="width: 500px"}
 
@@ -36,7 +36,8 @@ Figure 1: Block Diagram of the Heart [2]
 
 
 ODE Model for Human Heart
-After understanding, biologically, what is occurring in the heart, our group wanted to characterize the system in a way that made sense for system dynamics. A logical first step was to develop an ODE(s) to describe the system. It was helpful to do research on if this was done before or if there is an existing model that is commonly used. As it turns out, in bioengineering a common model is that of the Windkessel Model [3]. In this model, the circulatory system is treated as an electrical system.
+
+<br>After understanding, biologically, what is occurring in the heart, our group wanted to characterize the system in a way that made sense for system dynamics. A logical first step was to develop an ODE(s) to describe the system. It was helpful to do research on if this was done before or if there is an existing model that is commonly used. As it turns out, in bioengineering a common model is that of the Windkessel Model [3]. In this model, the circulatory system is treated as an electrical system.
 
 ![Shaded rendering of earlier version]({{ "/assets/images/fig2.png" | relative_url }}){: .inline-image-c style="width: 500px"}
 
@@ -56,11 +57,12 @@ Figure 3: Zoomed in Heart Rate Raw Data Plotted
 Figure 4: Fitted ODE plotted against data
 
 
-In conclusion, this ODE is not very accurate for a simple resting heart rate. For future reference, it could be interesting to fit an ODE for how heart rate changes during the beginning or end of a workout, such as “ramping up” the input 
-Performance Requirements 
-To design any closed loop system for the heart and cardiovascular system, we need defined performance requirements that show what an ideal and healthy operation looks like. These requirements act as constraints and describe allowable steady state values, acceptable behavior, and error tolerances for a model. It allows us to know what the output should be so that we can adjust a controller, like an ICD or pacemaker, to drive and stabilize the system to our desired goals.
+In conclusion, this ODE is not very accurate for a simple resting heart rate. For future reference, it could be interesting to fit an ODE for how heart rate changes during the beginning or end of a workout, such as “ramping up” the input.
 
-The main performance requirement that our model utilizes is heart rate. For a healthy adult's heart rate at rest, the value ranges between 60 to 100 beats per minute [12]. This defines the steady state value for the heart rate ODE so when the system is disturbed then the controller should drive the heart rate back to its ideal range. Since this requirement is the primary output in our model it is clear to see when an acceptable or unacceptable output occurs. Any significant deviations from the ideal heart rate may indicate problems such as tachycardia or other arrhythmias. 
+<br>Performance Requirements 
+<br>To design any closed loop system for the heart and cardiovascular system, we need defined performance requirements that show what an ideal and healthy operation looks like. These requirements act as constraints and describe allowable steady state values, acceptable behavior, and error tolerances for a model. It allows us to know what the output should be so that we can adjust a controller, like an ICD or pacemaker, to drive and stabilize the system to our desired goals.
+
+<br>The main performance requirement that our model utilizes is heart rate. For a healthy adult's heart rate at rest, the value ranges between 60 to 100 beats per minute [12]. This defines the steady state value for the heart rate ODE so when the system is disturbed then the controller should drive the heart rate back to its ideal range. Since this requirement is the primary output in our model it is clear to see when an acceptable or unacceptable output occurs. Any significant deviations from the ideal heart rate may indicate problems such as tachycardia or other arrhythmias. 
 
 Another performance requirement that determines healthy cardiac operation is blood pressure. The heart blood pressure is the force of blood that pushes against the artery walls while the heart pumps blood throughout the body. It is measured with systolic pressure, the force of blood against artery walls when the heart contracts, and diastolic pressure which is the pressure in arteries when the heart relaxes between beats. For a healthy adult the systolic pressure should be less than 120 mmHg and the diastolic pressure less than 80 mmHg [13]. If there is an elevated pressure then the heart would have to work harder which could change the system's behavior or parameters, requiring more control input to maintain a normal heart rate. This essentially acts as an external disturbance that can alter the steady state value and gain. 
 
@@ -70,14 +72,14 @@ The last performance requirement that was researched is the cardiac output. Simi
 
 Overall, these performance requirements help to identify what healthy heart behavior looks like for the cardiovascular system and serves as a guide for how the controller should regulate heart rate. They determine our desired steady state value, how the system should respond to disturbances, and how certain changes in the body can affect the gain of a heart. These requirements give us a baseline for designing and evaluating a closed loop system with a controller and allows the model to mathematically and realistically behave well.
 
-Cardiovascular Disease
-Cardiovascular disease is a group of diseases affecting human heart and blood vessels. There are many types:
-Valve disease: tightening or leaking in your heart valves
-Coronary artery disease: heart blood vessel blockage
-Cerebrovascular disease: a disease of the blood vessels supplying the brain
-Peripheral arterial disease: failure in supplying the arms and legs
-Arrhythmia: irregular heart rhythms
-Heart failure: problem with heart pumping/relaxing functions
+<br>Cardiovascular Disease
+<br>Cardiovascular disease is a group of diseases affecting human heart and blood vessels. There are many types:
+<br>Valve disease: tightening or leaking in your heart valves
+<br>Coronary artery disease: heart blood vessel blockage
+<br>Cerebrovascular disease: a disease of the blood vessels supplying the brain
+<br>Peripheral arterial disease: failure in supplying the arms and legs
+<br>Arrhythmia: irregular heart rhythms
+<br>Heart failure: problem with heart pumping/relaxing functions
 
 Such symptoms of heart issues can cause chest pain (angina), shortness of breath (dyspnea), dizziness or fainting, or pressure on the chest. On top of such symptoms due to heart issues, blockages in blood vessels can lead to pain or cramps in your legs in motion, change of color on different body parts, swelling, or numbness.
 
@@ -85,7 +87,7 @@ Based on the research, we decided to explore arrhythmia deeper, defining ideal/r
 
 The heart has a total of four chambers, two on each side, and four valves, which open and close to let blood flow only in one way when heart contracts and beats. Blood flows through the valve only when the valves open due to a pressure difference across the valves. Given that all four chambers beat in an orderly manner, the heart supplies blood to the lungs and to the rest of the body tissues.
 
-![Shaded rendering of earlier version]({{ "/assets/images/heart anatomy.png" | relative_url }}){: .inline-image-r style="width: 500px"}
+![Shaded rendering of earlier version]({{ "/assets/images/heart anatomy.png" | relative_url }}){: .inline-image-c style="width: 500px"}
 
 Figure 5: Heart valve anatomy
 
@@ -94,18 +96,20 @@ A proper electrical sequence of heartbeat begins in the right atrium (upper cham
 Various reasons can cause the disease, and one of the common causes is atrial fibrillation, where the heart's upper chamber beats irregularly and out of sync with the lower heart chambers. When an insufficient amount of the blood is pumped out of the atria, a blood pool is created, eventually forming a blood clot that affects the blood flow.
 
 Defining such irregular heart beats as resulting in a nonzero “error” in a system, we established a system that treats ideal heart beat as a set reference input and an irregular heart beat as an output. Caused by changes in the electrical signals that control the human heartbeat, arrhythmia can be resolved by an Implantable Cardiac Defibrillator (ICD) under the skin, which we will discover more later on.
-ICD: Medical Remedy
-An ICD is an implantable device implanted under the patient’s skin that seeks to detect and correct dangerously fast and irregular heartbeats known as arrhythmias. The device does this by monitoring heart rate through the electrical impulses of heartbeats, and delivering an electrical shock to the heart, ultimately resetting the heart’s electrical system to a normal rhythm. 
+
+
+<br>ICD: Medical Remedy
+<br>An ICD is an implantable device implanted under the patient’s skin that seeks to detect and correct dangerously fast and irregular heartbeats known as arrhythmias. The device does this by monitoring heart rate through the electrical impulses of heartbeats, and delivering an electrical shock to the heart, ultimately resetting the heart’s electrical system to a normal rhythm. 
 
 ICDs monitor the heart’s electrical activity through wire leads that are connected directly to the heart’s chambers. These leads deliver signals to the ICD, which generates and sends an electrical signal back to the heart in the event of an arrhythmia. 
 
-![Shaded rendering of earlier version]({{ "/assets/images/ICD.png" | relative_url }}){: .inline-image-r style="width: 500px"}
+![Shaded rendering of earlier version]({{ "/assets/images/ICD.png" | relative_url }}){: .inline-image-c style="width: 500px"}
 
 Figure 6. Diagram of an ICD [9].
 
 The ICD’s function can be modeled as a device that takes the heart rate error as an input:
-e=r-y
-where r is the reference, ideal heart rate, and y is the heart’s current heart rate, detected through the wire leads. 
+<br>e=r-y
+<br>where r is the reference, ideal heart rate, and y is the heart’s current heart rate, detected through the wire leads. 
 
 This error is then processed through the ICD’s controller, which will alert of an arrhythmia event if the value of the error is high enough within the threshold of irregular heartbeating. When this happens, the ICD will generate a large electrical shock, which is modeled as an impulse input function: 
 f(t)=F0(t)
@@ -116,7 +120,7 @@ In fact, ICDs are commonly described to have a “fuzzy” PID controller, which
 
 
 References
-[1] C. C. medical professional, “How blood flows through your heart & body,” Cleveland Clinic, https://my.clevelandclinic.org/health/articles/17060-how-does-the-blood-flow-through-your-heart. [Accessed Dec. 6, 2025]. 
+<br>[1] C. C. medical professional, “How blood flows through your heart & body,” Cleveland Clinic, https://my.clevelandclinic.org/health/articles/17060-how-does-the-blood-flow-through-your-heart. [Accessed Dec. 6, 2025]. 
 [2] Figure 2: Block diagram of heart, https://www.researchgate.net/figure/Block-Diagram-of-Heart_fig2_373465786. [Accessed Dec. 6, 2025]. 
 [3] W. N. J. BE;, “The arterial windkessel,” Medical & biological engineering & computing, https://pubmed.ncbi.nlm.nih.gov/18543011/. [Accessed Dec. 6, 2025]. 
 [4] M. DiDomizio, G. D’Elia, and S. Klein, rep.
