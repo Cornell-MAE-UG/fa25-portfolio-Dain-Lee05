@@ -69,7 +69,7 @@ Cardiovascular Disease
 <br> - Peripheral arterial disease: failure in supplying the arms and legs
 <br> - Arrhythmia: irregular heart rhythms
 <br> - Heart failure: problem with heart pumping/relaxing functions
-Such symptoms of heart issues can cause chest pain (angina), shortness of breath (dyspnea), dizziness or fainting, or pressure on the chest. On top of such symptoms due to heart issues, blockages in blood vessels can lead to pain or cramps in your legs in motion, change of color on different body parts, swelling, or numbness.
+<br><br>Such symptoms of heart issues can cause chest pain (angina), shortness of breath (dyspnea), dizziness or fainting, or pressure on the chest. On top of such symptoms due to heart issues, blockages in blood vessels can lead to pain or cramps in your legs in motion, change of color on different body parts, swelling, or numbness.
 
 Based on the research, we decided to explore arrhythmia deeper, defining ideal/regular heart beat as a reference input. Arrhythmia can be categorized in three parts: fast heartbeat (tachycardia), slow heartbeat (bradycardia), and premature heartbeats. 
 
