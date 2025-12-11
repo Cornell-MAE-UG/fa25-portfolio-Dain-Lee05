@@ -29,7 +29,7 @@ The Heart System
 The heart and circulatory system is modeled as a closed loop system with a purpose of delivering oxygenated blood to muscles throughout the body. More specifically, the system starts with veins bringing deoxygenated blood towards the heart. Eventually the blood enters the heart through the right atrium and flows into the right ventricle. From there, the blood travels to the lungs to dispose of waste products, notably carbon dioxide, and pick up oxygen. The newly oxygenated blood enters the left atrium followed by the left ventricle. From there, the blood circulates to the rest of the body via arteries [1]. 
 It can be convenient to compare the heart as a system via a block diagram of sorts. They can be thought of as inputs, deoxygenated blood, and outputs, oxygenated blood, with the heart transferring the blood in between. 
 
-![Shaded rendering of earlier version]({{ "/assets/images/fig1.png" | relative_url }}){: .inline-image-r style="width: 500px"}
+![Shaded rendering of earlier version]({{ "/assets/images/fig1.png" | relative_url }}){: .inline-image-c style="width: 500px"}
 
 Figure 1: Block Diagram of the Heart [2]
 
@@ -38,19 +38,19 @@ Figure 1: Block Diagram of the Heart [2]
 ODE Model for Human Heart
 After understanding, biologically, what is occurring in the heart, our group wanted to characterize the system in a way that made sense for system dynamics. A logical first step was to develop an ODE(s) to describe the system. It was helpful to do research on if this was done before or if there is an existing model that is commonly used. As it turns out, in bioengineering a common model is that of the Windkessel Model [3]. In this model, the circulatory system is treated as an electrical system.
 
-![Shaded rendering of earlier version]({{ "/assets/images/fig2.png" | relative_url }}){: .inline-image-r style="width: 500px"}
+![Shaded rendering of earlier version]({{ "/assets/images/fig2.png" | relative_url }}){: .inline-image-c style="width: 500px"}
 
 Figure 2: Table Representing the Windkessel Model of the Heart [4]
 
 
-	Upon further research, it seemed that this model was a bit above the scope of this assignment and our knowledge, so we decided to fit an ODE to data of heart rate. This still allows us to develop a deeper understanding of the heart as a system. 
-	Finding applicable data to even fit an ODE to was a larger challenge than anticipated. Significant data was presented in unusable forms that did not translate to data that can be analyzed by Matlab. Eventually, a data set was found that tracked the heart rate of a healthy 49 year old man practicing Chi Yoga. This heart rate data is considered to be a good baseline of a “normal” resting heart rate. There are numerous extraneous inputs, such as diseases, exercise and cardiac devices, that can lead to different heart rates, but in this data set, those are not present. It should be noted that Matlab code used for this analysis is appended at the end of the report [5].
+Upon further research, it seemed that this model was a bit above the scope of this assignment and our knowledge, so we decided to fit an ODE to data of heart rate. This still allows us to develop a deeper understanding of the heart as a system. 
+Finding applicable data to even fit an ODE to was a larger challenge than anticipated. Significant data was presented in unusable forms that did not translate to data that can be analyzed by Matlab. Eventually, a data set was found that tracked the heart rate of a healthy 49 year old man practicing Chi Yoga. This heart rate data is considered to be a good baseline of a “normal” resting heart rate. There are numerous extraneous inputs, such as diseases, exercise and cardiac devices, that can lead to different heart rates, but in this data set, those are not present. It should be noted that Matlab code used for this analysis is appended at the end of the report [5].
 
-    ![Shaded rendering of earlier version]({{ "/assets/images/fig3.png" | relative_url }}){: .inline-image-r style="width: 500px"}
+![Shaded rendering of earlier version]({{ "/assets/images/fig3.png" | relative_url }}){: .inline-image-c style="width: 500px"}
 
 Figure 3: Zoomed in Heart Rate Raw Data Plotted
 
-![Shaded rendering of earlier version]({{ "/assets/images/fig4" | relative_url }}){: .inline-image-r style="width: 500px"}
+![Shaded rendering of earlier version]({{ "/assets/images/fig4.png" | relative_url }}){: .inline-image-c style="width: 500px"}
 
 
 Figure 4: Fitted ODE plotted against data
@@ -85,7 +85,7 @@ Based on the research, we decided to explore arrhythmia deeper, defining ideal/r
 
 The heart has a total of four chambers, two on each side, and four valves, which open and close to let blood flow only in one way when heart contracts and beats. Blood flows through the valve only when the valves open due to a pressure difference across the valves. Given that all four chambers beat in an orderly manner, the heart supplies blood to the lungs and to the rest of the body tissues.
 
-![Shaded rendering of earlier version]({{ "/assets/images/heart anatomy" | relative_url }}){: .inline-image-r style="width: 500px"}
+![Shaded rendering of earlier version]({{ "/assets/images/heart anatomy.png" | relative_url }}){: .inline-image-r style="width: 500px"}
 
 Figure 5: Heart valve anatomy
 
