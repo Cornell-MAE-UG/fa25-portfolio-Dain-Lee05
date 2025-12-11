@@ -7,20 +7,10 @@ image: /assets/images/human heart.png
 ---
 MAE 3260 Final Group Work: Exploring a System of Interest
 
-Outline:
-<br>Page 1: Cover page
-<br>Page 2: The Heart System
-<br>Pages 2-4: ODE Model for Human Heart
-<br>Pages 4-6: Performance Requirements
-<br>Page 6-7: Cardiovascular Disease
-<br>Page 8-10: ICD: Medical Remedy
-<br>Page 10-11: References
-<br>Page 11-13: Appendix (contains Matlab Code)
-
 Title: The Heart as a System
 
 Topic of Interest: Human Heart
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
 Abstract: In this project, we will be studying the human heart as a system. Specifically, we will be looking into devices that aid in its function in the case of disease and their respective effects on the cardiovascular system to satisfy performance metrics. In terms of system dynamics, we will be analyzing the heart through a block diagram, state space model, and closed loop control system. We are interested in connecting system dynamics to biology, since we have not done that in the scope of the course. 
 
 <br>
