@@ -10,7 +10,7 @@ MAE 3260 Final Group Work: Exploring a System of Interest
 Title: The Heart as a System
 
 Topic of Interest: Human Heart
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 Abstract: In this project, we will be studying the human heart as a system. Specifically, we will be looking into devices that aid in its function in the case of disease and their respective effects on the cardiovascular system to satisfy performance metrics. In terms of system dynamics, we will be analyzing the heart through a block diagram, state space model, and closed loop control system. We are interested in connecting system dynamics to biology, since we have not done that in the scope of the course. 
 
 <br>
