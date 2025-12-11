@@ -23,7 +23,7 @@ Topic of Interest: Human Heart
 
 Abstract: In this project, we will be studying the human heart as a system. Specifically, we will be looking into devices that aid in its function in the case of disease and their respective effects on the cardiovascular system to satisfy performance metrics. In terms of system dynamics, we will be analyzing the heart through a block diagram, state space model, and closed loop control system. We are interested in connecting system dynamics to biology, since we have not done that in the scope of the course. 
 
-<br><The Heart System>
+<The Heart System>
 <br>The heart and circulatory system is modeled as a closed loop system with a purpose of delivering oxygenated blood to muscles throughout the body. More specifically, the system starts with veins bringing deoxygenated blood towards the heart. Eventually the blood enters the heart through the right atrium and flows into the right ventricle. From there, the blood travels to the lungs to dispose of waste products, notably carbon dioxide, and pick up oxygen. The newly oxygenated blood enters the left atrium followed by the left ventricle. From there, the blood circulates to the rest of the body via arteries [1]. 
 <br>It can be convenient to compare the heart as a system via a block diagram of sorts. They can be thought of as inputs, deoxygenated blood, and outputs, oxygenated blood, with the heart transferring the blood in between. 
 
@@ -31,7 +31,7 @@ Abstract: In this project, we will be studying the human heart as a system. Spec
 
 Figure 1: Block Diagram of the Heart [2]
 
-<br><ODE Model for Human Heart>
+<ODE Model for Human Heart>
 <br>After understanding, biologically, what is occurring in the heart, our group wanted to characterize the system in a way that made sense for system dynamics. A logical first step was to develop an ODE(s) to describe the system. It was helpful to do research on if this was done before or if there is an existing model that is commonly used. As it turns out, in bioengineering a common model is that of the Windkessel Model [3]. In this model, the circulatory system is treated as an electrical system.
 
 ![Shaded rendering of earlier version]({{ "/assets/images/fig2.png" | relative_url }}){: .inline-image-c style="width: 500px"}
@@ -54,7 +54,7 @@ Figure 4: Fitted ODE plotted against data
 
 In conclusion, this ODE is not very accurate for a simple resting heart rate. For future reference, it could be interesting to fit an ODE for how heart rate changes during the beginning or end of a workout, such as “ramping up” the input.
 
-<br><Performance Requirements >
+<Performance Requirements>
 <br>To design any closed loop system for the heart and cardiovascular system, we need defined performance requirements that show what an ideal and healthy operation looks like. These requirements act as constraints and describe allowable steady state values, acceptable behavior, and error tolerances for a model. It allows us to know what the output should be so that we can adjust a controller, like an ICD or pacemaker, to drive and stabilize the system to our desired goals.
 
 The main performance requirement that our model utilizes is heart rate. For a healthy adult's heart rate at rest, the value ranges between 60 to 100 beats per minute [12]. This defines the steady state value for the heart rate ODE so when the system is disturbed then the controller should drive the heart rate back to its ideal range. Since this requirement is the primary output in our model it is clear to see when an acceptable or unacceptable output occurs. Any significant deviations from the ideal heart rate may indicate problems such as tachycardia or other arrhythmias. 
@@ -67,7 +67,7 @@ The last performance requirement that was researched is the cardiac output. Simi
 
 Overall, these performance requirements help to identify what healthy heart behavior looks like for the cardiovascular system and serves as a guide for how the controller should regulate heart rate. They determine our desired steady state value, how the system should respond to disturbances, and how certain changes in the body can affect the gain of a heart. These requirements give us a baseline for designing and evaluating a closed loop system with a controller and allows the model to mathematically and realistically behave well.
 
-<br><Cardiovascular Disease>
+<Cardiovascular Disease>
 <br>Cardiovascular disease is a group of diseases affecting human heart and blood vessels. There are many types:
 <br> - Valve disease: tightening or leaking in your heart valves
 <br> - Coronary artery disease: heart blood vessel blockage
@@ -92,7 +92,7 @@ Various reasons can cause the disease, and one of the common causes is atrial fi
 Defining such irregular heart beats as resulting in a nonzero “error” in a system, we established a system that treats ideal heart beat as a set reference input and an irregular heart beat as an output. Caused by changes in the electrical signals that control the human heartbeat, arrhythmia can be resolved by an Implantable Cardiac Defibrillator (ICD) under the skin, which we will discover more later on.
 
 
-<br><ICD: Medical Remedy>
+<ICD: Medical Remedy>
 <br>An ICD is an implantable device implanted under the patient’s skin that seeks to detect and correct dangerously fast and irregular heartbeats known as arrhythmias. The device does this by monitoring heart rate through the electrical impulses of heartbeats, and delivering an electrical shock to the heart, ultimately resetting the heart’s electrical system to a normal rhythm. 
 
 ICDs monitor the heart’s electrical activity through wire leads that are connected directly to the heart’s chambers. These leads deliver signals to the ICD, which generates and sends an electrical signal back to the heart in the event of an arrhythmia. 
