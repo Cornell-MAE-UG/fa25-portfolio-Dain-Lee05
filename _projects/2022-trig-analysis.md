@@ -31,6 +31,7 @@ The Heart System
 
 Figure 1: Block Diagram of the Heart [2]
 
+
 ODE Model for Human Heart
 <br>After understanding, biologically, what is occurring in the heart, our group wanted to characterize the system in a way that made sense for system dynamics. A logical first step was to develop an ODE(s) to describe the system. It was helpful to do research on if this was done before or if there is an existing model that is commonly used. As it turns out, in bioengineering a common model is that of the Windkessel Model [3]. In this model, the circulatory system is treated as an electrical system.
 
@@ -54,6 +55,7 @@ Figure 4: Fitted ODE plotted against data
 
 In conclusion, this ODE is not very accurate for a simple resting heart rate. For future reference, it could be interesting to fit an ODE for how heart rate changes during the beginning or end of a workout, such as “ramping up” the input.
 
+
 Performance Requirements
 <br>To design any closed loop system for the heart and cardiovascular system, we need defined performance requirements that show what an ideal and healthy operation looks like. These requirements act as constraints and describe allowable steady state values, acceptable behavior, and error tolerances for a model. It allows us to know what the output should be so that we can adjust a controller, like an ICD or pacemaker, to drive and stabilize the system to our desired goals.
 
@@ -66,6 +68,7 @@ An additional performance requirement is the stroke volume. This is defined as t
 The last performance requirement that was researched is the cardiac output. Similar to the stroke volume, the cardiac output is the total volume of blood pumped by the heart and it is a primary way to measure overall cardiac performance. The average cardiac output when using an the average stroke volume of 70 mL is 5.25 L/min, but the cardiac output can range from 5 to 6 L/min for a healthy adult at rest [15]. This performance requirement depends on both the heart rate and stroke volume because to calculate cardiac output the stroke volume and heart rate are multiplied together. The cardiac output essentially connects the heart rate to overall cardiovascular performance and acts as a minimum performance requirement for the system. Even if the heart rate is in the ideal range, the system won’t perform well unless blood flow is normal so a controller would need to regulate heart rate to allow the system to supply enough blood flow when disturbances occur. 
 
 Overall, these performance requirements help to identify what healthy heart behavior looks like for the cardiovascular system and serves as a guide for how the controller should regulate heart rate. They determine our desired steady state value, how the system should respond to disturbances, and how certain changes in the body can affect the gain of a heart. These requirements give us a baseline for designing and evaluating a closed loop system with a controller and allows the model to mathematically and realistically behave well.
+
 
 Cardiovascular Disease
 <br>Cardiovascular disease is a group of diseases affecting human heart and blood vessels. There are many types:
