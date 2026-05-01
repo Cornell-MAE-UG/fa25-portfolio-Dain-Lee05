@@ -18,8 +18,8 @@ The lid and body interface relies on precise tolerancing and a threading to prev
 ![Shaded rendering of earlier version]({{ "/assets/images/sipper lift.png" | relative_url }}){: .inline-image-r style="width: 160px"}
 
 <br><br><br>
-![Shaded rendering of earlier version]({{ "/assets/images/home view.png" | relative_url }}){: .inline-image-r style="width: 200px"}
-![Shaded rendering of earlier version]({{ "/assets/images/front profile.png" | relative_url }}){: .inline-image-r style="width: 200px"}
+![Shaded rendering of earlier version]({{ "/assets/images/home view.png" | relative_url }}){: .inline-image-c style="width: 200px"}
+![Shaded rendering of earlier version]({{ "/assets/images/front profile.png" | relative_url }}){: .inline-image-c style="width: 200px"}
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 Rendering 
