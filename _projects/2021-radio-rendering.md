@@ -19,8 +19,9 @@ The lid and body interface relies on precise tolerancing and a threading to prev
 
 <br><br><br>
 ![Shaded rendering of earlier version]({{ "/assets/images/home view.png" | relative_url }}){: .inline-image-r style="width: 200px"}
+![Shaded rendering of earlier version]({{ "/assets/images/front profile.png" | relative_url }}){: .inline-image-r style="width: 200px"}
 
-<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 Rendering 
 <br><br>
 Body: used stainless steel due to its impact-resistant, non-porous, subtly-reflective nature
