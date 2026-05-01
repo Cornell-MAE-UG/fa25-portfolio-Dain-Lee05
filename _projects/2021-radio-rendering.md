@@ -23,7 +23,7 @@ Rendering
 <br><br>
 Body: used stainless steel due to its impact-resistant, non-porous, subtly-reflective nature
 ![Shaded rendering of earlier version]({{ "/assets/images/home view.png" | relative_url }}){: .inline-image-r style="width: 200px"}
-<br>
+<br><br>
 Handle & Lid: used polypropylene due to its high melting point and light weight 
 <br><br>
 Sipper/Straw: used silicone due to its flexibility, softness on lips/teeth, and safety in dishwashers 
