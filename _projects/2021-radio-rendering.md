@@ -5,22 +5,22 @@ description: Consumer Product Reverse Engineering & CAD Modeling
 technologies: Fusion 360 
 image: /assets/images/stanley cup.jpg
 ---
-
+<br>
 I did a reverse-engineering project where I recreated a Stanley tumbler in Fusion 360. Instead of just modeling it, I approached it like a product teardown - trying to understand how the geometry, materials, and assembly decisions support its function.
 
-<br> <br><br>
+<br><br><br><br>
 I broke the product into key components: the body, lid, handle, and sipper/straw. Each part serves a distinct purpose such as thermal insulation, structural integrity, fluid containment, and user interaction. 
 <br>
 The lid and body interface relies on precise tolerancing and a threading to prevent leakage, allowing repeated assembly by the user. I noticed consistent fillets and smooth transitions, which are typical manufacturable designs and are likely driven by metal forming/molding processes. 
 
-![Shaded rendering of earlier version]({{ "/assets/images/lid assembly.png" | relative_url }}){: .inline-image-r style="width: 170px"}
-![Shaded rendering of earlier version]({{ "/assets/images/sipper sketch.png" | relative_url }}){: .inline-image-r style="width: 170px"}
-![Shaded rendering of earlier version]({{ "/assets/images/sipper lift.png" | relative_url }}){: .inline-image-r style="width: 170px"}
+![Shaded rendering of earlier version]({{ "/assets/images/lid assembly.png" | relative_url }}){: .inline-image-r style="width: 160px"}
+![Shaded rendering of earlier version]({{ "/assets/images/sipper sketch.png" | relative_url }}){: .inline-image-r style="width: 160px"}
+![Shaded rendering of earlier version]({{ "/assets/images/sipper lift.png" | relative_url }}){: .inline-image-r style="width: 160px"}
 
 <br><br><br>
 ![Shaded rendering of earlier version]({{ "/assets/images/home view.png" | relative_url }}){: .inline-image-r style="width: 200px"}
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 Rendering 
 <br><br>
 Body: used stainless steel due to its impact-resistant, non-porous, subtly-reflective nature
