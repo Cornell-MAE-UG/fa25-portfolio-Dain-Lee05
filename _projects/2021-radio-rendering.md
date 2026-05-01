@@ -13,13 +13,12 @@ I broke the product into key components: the body, lid, handle, and sipper/straw
 <br>
 The lid and body interface relies on precise tolerancing and a threading to prevent leakage, allowing repeated assembly by the user. I noticed consistent fillets and smooth transitions, which are typical manufacturable designs and are likely driven by metal forming/molding processes. 
 
-![Shaded rendering of earlier version]({{ "/assets/images/lid assembly.png" | relative_url }}){: .inline-image-r style="width: 150px"}
-![Shaded rendering of earlier version]({{ "/assets/images/sipper sketch.png" | relative_url }}){: .inline-image-r style="width: 150px"}
-![Shaded rendering of earlier version]({{ "/assets/images/sipper lift.png" | relative_url }}){: .inline-image-r style="width: 150px"}
+![Shaded rendering of earlier version]({{ "/assets/images/lid assembly.png" | relative_url }}){: .inline-image-r style="width: 170px"}
+![Shaded rendering of earlier version]({{ "/assets/images/sipper sketch.png" | relative_url }}){: .inline-image-r style="width: 170px"}
+![Shaded rendering of earlier version]({{ "/assets/images/sipper lift.png" | relative_url }}){: .inline-image-r style="width: 170px"}
 
 <br><br><br>
-![Shaded rendering of earlier version]({{ "/assets/images/front profile.png" | relative_url }}){: .inline-image-r style="width: 200px"}
-![Shaded rendering of earlier version]({{ "/assets/images/home view.png" | relative_url }}){: .inline-image-r style="width: 150px"}
+![Shaded rendering of earlier version]({{ "/assets/images/home view.png" | relative_url }}){: .inline-image-r style="width: 200px"}
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 Rendering 
